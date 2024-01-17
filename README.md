@@ -9,7 +9,7 @@ To get started with the Beats Landing Page, follow these steps:
 
  Clone the repository:
 bash
-git clone https://github.com/your-username/beats-landing-page.git
+git clone https://github.com/hellyjani73/beats-landing-page.git
 Open the project folder:
 bash
 cd beats-landing-page
