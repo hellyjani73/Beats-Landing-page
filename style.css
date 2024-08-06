@@ -1,4 +1,5 @@
-* {
+
+  * {
   margin: 0;
   padding: 0;
   outline: 0;
@@ -8,10 +9,12 @@
   color: #ffffff;
 }
 
+/* removing the default css of a tags */
 a {
   text-decoration: none;
 }
 
+/* removing the default css of li tags */
 li {
   list-style: none;
 }
@@ -20,6 +23,7 @@ body {
   margin: 0 15vw;
 }
 
+/* designing the navigation menu */
 nav {
   display: flex;
   width: 100%;
@@ -47,7 +51,7 @@ nav ul li a {
   color: white;
 }
 
-nav ul li:first-child a {
+nav ul li:first-child a{
   font-weight: 700;
   font-size: 14px;
 }
@@ -65,43 +69,45 @@ nav ul li:first-child a {
   padding: 10px 40px;
 }
 
+/* designing the main section */
 main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 30px;
   position: relative;
 }
 
 .mainImg {
   width: 230px;
-  margin-top: -150px;
+  position: relative;
+  top: -250px;
+  left: 70px;
 }
 
 .main {
-  text-align: center;
+  margin-left: 180px;
 }
 
 .onEarImg {
   width: 320px;
-  margin: 20px 0;
+  margin-left: 50px;
 }
 
 .main h1 {
   font-weight: 600;
-  font-size: 36px;
-  margin-bottom: 15px;
+  font-size: 46px;
+  margin-bottom: 25px;
 }
 
 .main h4 {
   font-weight: 500;
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .main p {
-  width: 85%;
-  font-size: 14px;
+  width: 65%;
+  font-size: 12px;
   font-weight: 300;
   color: #bdc0c2;
   line-height: 25px;
@@ -120,25 +126,39 @@ main {
 
 .shopping-bag-section img {
   width: 15px;
+  background-color: transparent;
 }
 
+.shopping-bag-section p {
+  margin-bottom: 0;
+  color: white;
+  background-color: transparent;
+}
+
+.shopping-bag-section span {
+  background-color: transparent;
+}
+
+/* designing the social media section */
 .social-media-section {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 0 50px;
-  margin: 20px 0;
+  position: relative;
+  top: -50px;
+  margin-bottom: 40px;
 }
 
 .social-media-section img {
   scale: 0.8;
 }
 
+/* designing the specification section */
 .specification {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 0;
 }
 
 .specification-logo,
@@ -149,8 +169,6 @@ main {
 
 .specification-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .specification-list img {
@@ -181,8 +199,9 @@ main {
   margin-left: 30px;
 }
 
+/* designing the case section */
 .case {
-  margin-top: 40px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,18 +209,18 @@ main {
 
 .case-item {
   display: flex;
-  flex-direction: column;
+  gap: 30px;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
 }
 
 .case-item-img {
   scale: 0.8;
+  /* width: 50%; */
 }
 
 .case-item div {
-  width: 80%;
-  text-align: center;
+  width: 20%;
 }
 
 .case-item div p:first-child {
@@ -228,15 +247,16 @@ main {
   padding: 10px 20px;
 }
 
+/* buy product section */
 .buy-product {
   background: #181a1b;
   border-radius: 12px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  gap: 50px;
   margin-top: 70px;
-  padding: 20px;
+  padding: 40px 0;
 }
 
 .buy-product div,
@@ -247,7 +267,7 @@ main {
 }
 
 .buy-product div {
-  text-align: center;
+  width: 25%;
 }
 
 .buy-product div h3 {
@@ -265,7 +285,7 @@ main {
 .buy-product div div {
   display: flex;
   align-items: center;
-  justify-content: center;
+  width: fit-content;
   background: #000000;
   border-radius: 8px;
   padding: 10px 20px;
@@ -282,17 +302,16 @@ main {
   color: white;
 }
 
+/* designing the product section for displaying the items */
 .product {
   display: flex;
   flex-direction: column;
-  margin: 0 10vw;
+  margin: 0 150px;
 }
 
 .product-logo {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
 }
 
 .product-logo {
@@ -303,8 +322,8 @@ main {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  gap: 50px;
+  padding-left: 50px;
 }
 
 .product-card {
@@ -361,57 +380,53 @@ main {
   height: 13px;
 }
 
-footer {
+/* designing the footer section */
+footer{
   margin: 100px 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
   position: relative;
 }
 
-.footer-logo {
+.footer-logo{
   scale: 0.8;
-  margin-bottom: 20px;
 }
 
-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-
-ul li a {
+ul li a{
   font-size: 12px;
   color: #BDC0C2;
 }
 
-ul li:first-child a {
+ul li:first-child a{
   font-size: 16px;
   font-weight: 400;
   color: white;
 }
 
-.footer-subscription {
+ul li:first-child{
+  margin-bottom: 10px;
+}
+
+.footer-subscription{
   display: flex;
   flex-direction: column;
   gap: 30px;
-  align-items: center;
 }
 
-.footer-subscription div:first-child {
+.footer-subscription div:first-child{
   background: #181A1B;
-  border-radius: 8px;
-  padding: 5px 10px;
-  display: flex;
+border-radius: 8px;
+padding: 5px 10px;
+display: flex;
 }
 
-.footer-subscription div:first-child input {
+.footer-subscription div:first-child input{
   border: none;
   background-color: transparent;
 }
 
-.subscribe-button {
+.subscribe-button{
   background: #0A0A0B;
   border-radius: 8px;
   padding: 10px 20px;
@@ -421,95 +436,21 @@ ul li:first-child a {
   gap: 10px;
 }
 
-.subscribe-button img {
+.subscribe-button img{
   scale: 0.8;
 }
 
-.subscribe-button p {
+.subscribe-button p{
   font-size: 12px;
 }
 
-.footer-subscription div:last-child {
-  display: flex;
-  gap: 10px;
-}
-
-.footer-subscription div:last-child img {
+.footer-subscription div:last-child img{
+  margin-right: 10px;
   scale: 0.8;
 }
 
-.arrow-up {
-  margin-top: 20px;
+.arrow-up{
+  position: absolute;
+  right: -160px;
   scale: 0.8;
-}
-
-@media (max-width: 1200px) {
-  body {
-    margin: 0 10vw;
-  }
-}
-
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
-  
-  nav ul li {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-  
-  nav .nav-right-section {
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  main .mainImg,
-  main .onEarImg {
-    width: 150px;
-  }
-
-  .main p {
-    width: 100%;
-  }
-  
-  .case-item {
-    flex-direction: column;
-  }
-
-  .product-items {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    margin: 0 5vw;
-  }
-  
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  nav ul {
-    width: 100%;
-  }
-
-  .main h1 {
-    font-size: 28px;
-  }
-
-  .main h4 {
-    font-size: 14px;
-  }
-
-  .main p {
-    font-size: 12px;
-    line-height: 20px;
-  }
-  
-  .buy-product div div {
-    padding: 5px 10px;
-  }
 }
